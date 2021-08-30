@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu_CAFE</title>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" href="css/menu2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+ <header>
+     <nav>
+       <div class="row clearfix">
+       	    <img src="imgs/logo.png" class="logo">
+
+       	 
+         <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+       </div>	
+     </nav>
+     <br>
+
+     <div class="main-content-header">
+
+<div class="row" style="text-align: center; margin-bottom: 5%;">
+        <div class="col">
+          <button style="margin-right: 5px; width:25%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Your Orders (<span class="total-count"></span>)</button>
+          <button style="margin-right: 5px; width:25%;" class="clear-cart btn btn-danger">Clear Orders </button></div>
+    </div>
+
+      
+<br>
+  <h1>M E N U</h1>
+  <br>
+ <button class="tablink" onclick="openPage('COFFEES', this, 'violet')">COFFEES & TEA</button>
+<button class="tablink" onclick="openPage('FOODS', this, 'violet')" >FOODS</button>
+<button class="tablink" onclick="openPage('CAKES', this, 'violet') "id="defaultOpen">DESERTS</button>
+
+
+
+<div id="COFFEES" class="tabcontent">
+  <h3>COFFEE & TEA</h3>
+  <br>
+  <hr>
+  
+<div class="row">
+  
+
+  <div class="column" >
+    <h2>HOT CHOCOLATE</h2>
+    <p>A big nourishing, wholesome cup of whole milk — really chocolaty & frothy.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="HOT CHOCOLATE" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAPPUCCINO</h2>
+    <p>The Viennese style, frothy coffee with milk, topped with a dash of chocolate. Perfectly relaxing.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="CAPPUCCINO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+</div>
+
+
+<div class="row">
+  
+
+  <div class="column" >
+    <h2>SOUTH INDIAN FILTER COFFEE</h2>
+    <p>Espresso with hot milk, aromatic and earthy.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 195</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SOUTH INDIAN FILTER COFFEE" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>BLACK COFFEE</h2>
+    <p>Black aromatic coffee, a perfect accompaniment or end to a good meal.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="BLACK COFFEE" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>OUR SELECTION</h2>
+    <p>Green Organic, Assam Leaf, Masala Chai, Earl Grey, Kashmiri Kahwa, Darjeeling, Ginger Honey</p>
+  <p style="font-family: body; color: #bf55ec;">RS 155</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="OUR SELECTION" data-price="155" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+<div class="column" >
+    <h2>Iced tea lemonade</h2>
+   <p> one-to-one combination of brewed iced tea or matcha, and lemonade</p>
+  <p style="font-family: body; color: #bf55ec;">RS 175 each</p>
+  
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="Lite Lemon / Perfect Peach" data-price="175" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+  
+
+</div>
+<br>
+<hr>
+ <img src="imgs/menu/menu11.jpg" >
+<br>
+</div>
+
+
+<!------FOOOOOODS----->
+
+<div id="FOODS" class="tabcontent">
+  <h3>ALL DAY BREAKFAST</h3>
+   <br>
+  <hr>
+  
+<div class="row">
+  <div class="column" >
+    <h2>SUPERFOOD MIXED FRUIT BOWL</h2>
+    <p>A selection of the season’s freshest fruit with a sprinkling of your choice of seeds – sunflower, melon, flax and pumpkin.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 325</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="SUPERFOOD MIXED FRUIT BOWL" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CHANNA SALAD</h2>
+    <p>A nutritious salad of chickpeas, tomato, cucumber, onion and coriander with a fresh and spicy lemon dressing.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 345</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CHANNA SALAD" data-price="345" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+  
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/salad1.jpg" alt="Salad1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/salad2.jpg" alt="salad2" style="width:100%;">
+  </div>
+</div>
+  <br>
+  <h3> Soups</h3>
+<br>
+
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>CHICKEN NOODLE SOUP</h2>
+    <p> The classic chicken soup consists of a clear chicken broth, often with pieces of chicken or vegetables.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 245</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ BARISTA GAZPACHO" data-price="245" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>TOMATO AND CELERY SOUP</h2>
+    <p>Vine ripened and fresh red tomato, fragrant celery...a delicious cooling soup.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="TOMATO AND CELERY SOUP" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/ch1.jpg" alt="Soup1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/ch2.jpg" alt="Soup2" style="width:100%;">
+  </div>
+</div>
+  
+
+
+  <br>
+  <h3>Sandwiches</h3>
+<br>
+<p style="text-align: center;">For extra delight add a side of hand-tossed herby potato wedges. (Rs. 95)</p>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+     <h2>TOASTED SANDWICH</h2>
+    <p>A delicious cheese, tomato, lettuce and cucumber sandwich. Toasted just now.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 325</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ Barista TOASTED SANDWICH" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CRUNCHY SANDWICH</h2>
+    <p>A scrumptious sandwich filled with crunchy peppers, lettuce and hummus, on toasted whole wheat bread.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 325</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CRUNCHY LEBANESE SANDWICH" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/san2.jpg" alt="san1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/san1.jpg" alt="san2" style="width:100%;">
+  </div>
+</div>
+ 
+
+ <h3>Pizzas</h3>
+<br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>Margherita PIZZA</h2>
+    <p>A hugely popular margherita, with a deliciously tangy single cheese topping.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 425</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ Barista PIZZA" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>NON-VEG LOADED</h2>
+    <p>Peri - Peri chicken | Pepper Barbecue | Chicken Sausage in a fresh pan crust.</p>
+    <p style="font-family: body; color: #bf55ec;">Rs 495</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="LAZY LUNCH PASTA" data-price="495" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/piz1.jpg" alt="piz1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/piz2.jpg" alt="piz2" style="width:100%;">
+  </div>
+</div>
+
+</div>
+<!------- CAKES---->
+
+<div id="CAKES" class="tabcontent">
+  <h3>CAKES</h3>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2> Black Forest Gateau</h2>
+    <p>Under all the whipped cream are layers of soft chocolate sponge with a hint of rum and cinnamon. </p>
+  <p style="font-family: body; color: #bf55ec;">RS 75</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="GOOEY CHOCOLATE CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+
+  <div class="column" >
+    <h2>CARROT AND WALNUT CAKE</h2>
+    <p>A nourishing cake made with jaggery and farm fresh carrots, full of goodness!</p>
+    <p style="font-family: body; color: #bf55ec;">RS 125</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CARROT AND WALNUT CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/Cak1.jpg" alt="cak1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/Cak2.jpg" alt="cak2" style="width:100%;">
+  </div>
+  
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>Pineapple Cake</h2>
+    <p>A moist golden cake soaked layered with whipped cream and topped with juiced pineapple slice. </p>
+   <p style="font-family: body; color: #bf55ec;">RS 95</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="SPICED CARROT CAKE WITH MAPLE CREAM CHEESE FROSTING" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+
+
+  <div class="column" >
+    <h2>EGGLESS TRUFLES CAKE</h2>
+    <p>Glazed with a tender ganache and delicious chopped dark chocolate truffle, all this made completely eggless! </p>
+    <p style="font-family: body; color: #bf55ec;">RS 130</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="DATE CAKE WITH TOFFEE SAUCE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+
+
+<div class="row">
+  
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/Cak3.jpg" alt="cak3" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/Cak4.jpg" alt="cak4" style="width:100%;">
+  </div>
+  
+</div>
+
+<br>
+ <h3>Desserts</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>GULAB JAMUN</h2>
+    <p>The good old delight made with khoya, fried golden and finally dipped in saffron induced sugar syrup.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 110</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="BANOFFEE PIE" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>KAJU KI BARFI</h2>A 
+    <p>Barfi made with cashew nuts and milk, topped with silver varq.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 200</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CARAMELIZED BANANAS" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%;">
+    <img src="imgs/menu/jula.jpg" alt="d1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%;">
+    <img src="imgs/menu/kaj.jpg" alt="d2" style="width:100%;">
+  </div>
+</div>
+
+<br>
+ <h3>ICE-CREAMS</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>Death by Chocolate Sundae</h2>
+    <p>Combination of  ice cream and chocolate cake topped with cherries, chocolate sauce, and peanuts.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 200</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="BANOFFEE PIE" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>Trilogy Sundae</h2> 
+    <p>A Trio of vanilla, strawberry and pista ice cream with fruit salad, lychees and apricots topped with cream, jelly, mango pulp and strawberry syrup.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CARAMELIZED BANANAS" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/ice.jpg" alt="d1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/ice2.jpg" alt="d2" style="width:100%;">
+  </div>
+</div>
+
+
+</header>   
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black; font-size: 200%;">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table style="color: black; font-family: body; font-style: bold;" class="show-cart table">
+          
+        </table>
+
+        <div style="color: black; font-family: body; font-style: bold;">Total price: Rs <span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<form action="Checkout.html" method="POST">
+       <input type="submit" class="btn btn-primary" >Checkout</input>
+     
+        
+
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+   
+   function slideshow(){
+      var x = document.getElementById('check-class');
+      if(x.style.display === "none"){
+        x.style.display="block";
+      } else{
+        x.style.display="none";
+      }
+   }
+
+   function openPage(pageName, elmnt, color) {
+ 
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+ 
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+ 
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+
+mybutton = document.getElementById("myBtn");
+
+
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+//Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+ </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="css/script.js"></script>
+  <script>
+function myFunction() {
+  alert("Item added in your order");
+}
+</script>
+ </body>
+</html>

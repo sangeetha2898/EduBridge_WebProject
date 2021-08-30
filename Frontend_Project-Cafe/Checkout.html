@@ -1,0 +1,128 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" href="css/menu2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+ <header>
+     <nav>
+       <div class="row clearfix">
+       	    <img src="imgs/logo.png" class="logo">
+
+       	 
+         <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+       </div>	
+     </nav>
+     <br>
+ <div class="main-content-header">
+
+<div class="row" style="text-align: center; margin-bottom: 5%;">
+        <div class="col">
+          <button style="margin-right: 5px; width:25%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">YOUR ORDERS(<span class="total-count"></span>)</button>
+          </div>
+    </div>
+
+
+
+
+<div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black; font-size: 200%; text-align:center;">CAFE BREWERS BAY</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table style="color: black; font-family: body; font-style: bold;" class="show-cart table"><tr><td>GOOEY CHOCOLATE CAKE</td><td>(275)</td><td><div class="input-group"><button class="minus-item input-group-addon btn btn-primary" data-name="GOOEY" chocolate="" cake="">-</button><input type="number" class="item-count form-control" data-name="GOOEY CHOCOLATE CAKE" value="1"><button class="plus-item btn btn-primary input-group-addon" data-name="GOOEY" chocolate="" cake="">+</button></div></td><td><button class="delete-item btn btn-danger" data-name="GOOEY" chocolate="" cake="">X</button></td><td>275.00</td></tr></table>
+        <div style="color: black; font-family: body; font-style: bold;">Total price: Rs <span class="total-cart">275</span></div>
+      </div>
+      </div>
+</header>
+
+
+<script type="text/javascript">
+   
+   function slideshow(){
+      var x = document.getElementById('check-class');
+      if(x.style.display === "none"){
+        x.style.display="block";
+      } else{
+        x.style.display="none";
+      }
+   }
+
+   function openPage(pageName, elmnt, color) {
+ 
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+ 
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+ 
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+
+mybutton = document.getElementById("myBtn");
+
+
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+//Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+ </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="css/script.js"></script>
+  <script>
+function myFunction() {
+  alert("Item added in your order");
+}
+</script>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
